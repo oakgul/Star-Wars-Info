@@ -5,7 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    .col {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+.col:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+
+#output {
+  width: 100%;
+  border: 2px solid gold;
+  border-radius: 10px;
+  display: none;
+  text-align: left;
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.episode {
+  width: 150px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  /* margin-right: 12px; */
+  margin: 0 auto;
+}
+  </style>
   <title>Star Wars Characters</title>
 </head>
 <body>
@@ -132,6 +165,17 @@
     </div>
     <hr>
 
+    <div class="row mb-1">
+        <div id="1" class="episode">Episode - 1</div>
+        <div id="2" class="episode">Episode - 2</div>
+        <div id="3" class="episode">Episode - 3</div>
+        <div id="4" class="episode">Episode - 4</div>
+        <div id="5" class="episode">Episode - 5</div>
+        <div id="6" class="episode">Episode - 6</div>
+        <div id="7" class="episode">Episode - 7</div>
+      </div>
+      <hr>
+
     <div >
       <ul id="output">
         
@@ -140,6 +184,6 @@
     
   </div>
 
-  <script src="main.js"></script>
+  <script src="main.js"/>
 </body>
 </html>
