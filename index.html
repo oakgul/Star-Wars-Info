@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
-    .col {
+.col {
   width: 100%;
   border: 1px solid black;
   border-radius: 4px;
@@ -14,7 +14,11 @@
   margin-right: 3px;
 }
 
-.col:hover {
+.famous:hover {
+  opacity: 0.5;
+}
+
+.col:hover, .episode:hover {
   background-color: gold;
   cursor: pointer;
 }
@@ -39,16 +43,16 @@
   margin: 0 auto;
 }
   </style>
-  <title>Star Wars Characters</title>
+  <title>Star Wars Info App</title>
 </head>
 <body>
 
   <div class="container text-center">
     <div class="row mb-1 mt-1">
       <div id="1" class="col">Luke Skywalker</div>
-      <div id="2" style="background: gold" class="col text-white">C-3PO</div>
-      <div id="3" style="background: #00236D" class="col text-white">R2-D2</div>
-      <div id="4" style="background: black" class="col text-white">Darth Vader</div>
+      <div id="2" style="background: gold" class="col text-white famous">C-3PO</div>
+      <div id="3" style="background: #00236D" class="col text-white famous">R2-D2</div>
+      <div id="4" style="background: black" class="col text-white famous">Darth Vader</div>
       <div id="5" class="col">Leia Organa</div>
       <div id="6" class="col">Owen Lars</div>
       <div id="7" class="col">Beru W. Lars</div>
@@ -60,7 +64,7 @@
       <div id="10" class="col">Obi-Wan Kenobi</div>
       <div id="11" class="col">Anakin Skywalker</div>
       <div id="12" class="col">Wilhuff Tarkin</div>
-      <div id="13" style="background: chocolate" class="col text-white">Chewbacca</div>
+      <div id="13" style="background: chocolate" class="col text-white famous">Chewbacca</div>
       <div id="14" class="col">Han Solo</div>
       <div id="15" class="col">Greedo</div>
       <div id="16" class="col">Jabba D. Tiure</div>
@@ -69,7 +73,7 @@
     <div class="row mb-1">
       <div id="18" class="col">Wedge Antilles</div>
       <div id="19" class="col">Jek Tono Porkins</div>
-      <div id="20" style="background: green" class="col text-white">Yoda</div>
+      <div id="20" style="background: green" class="col text-white famous">Yoda</div>
       <div id="21" class="col">Palpatine</div>
       <div id="22" class="col">Boba Fett</div>
       <div id="23" class="col">IG-88</div>
@@ -160,7 +164,7 @@
       <div id="84" class="col">Finn</div>
       <div id="85" class="col">Rey</div>
       <div id="86" class="col">Poe Dameron</div>
-      <div id="87" style="background: orange" class="col text-white">BB8</div>
+      <div id="87" style="background: orange" class="col text-white famous">BB8</div>
       <div id="88" class="col">Captain Phasma</div>
     </div>
     <hr>
